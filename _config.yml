@@ -1,18 +1,23 @@
 baseurl: ""
 url: "http://reginax.github.io" # the base hostname & protocol for your site
 title: "Regina Xu"
-permalink: :title
 exclude:
   - "README.md"
+  - "CHANGELOG.md"
+  - "CNAME"
   - "Gemfile"
   - "Gemfile.lock"
+permalink: :title
 defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
   -
     scope:
       path: ""
       type: "posts"
     values:
       layout: "post"
-gems:
-  - jekyll-sitemap
-
