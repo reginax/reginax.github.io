@@ -7,7 +7,6 @@ exclude:
   - "CNAME"
   - "Gemfile"
   - "Gemfile.lock"
-permalink: :title
 defaults:
   -
     scope:
