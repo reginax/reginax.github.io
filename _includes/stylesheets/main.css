@@ -1,0 +1,276 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "Merriweather", "Helvetica Neue", Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: inherit;
+}
+body, div, ul, ol, li, h1, h2, h3, h4, h5, h6, input, button, textarea, p, blockquote, th, td, a {
+    margin: 0;
+    padding: 4px;
+    transform-origin: left top 0;
+}
+
+p {
+    margin: 0 0 25px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+@media(min-width:767px) {
+    p {
+        margin: 0 0 35px;
+        font-size: 20px;
+        line-height: 1.6;
+    }
+}
+
+a {
+    color: {{ site.color.links }};
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: #11505d;
+}
+
+.light {
+    font-weight: 400;
+}
+
+.intro {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    background: url(/images/phirho1.jpg) no-repeat center center scroll;
+    background-color: #ffffff;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.intro .intro-body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.intro .intro-body .brand-heading {
+    color:;
+    font-size: 40px;
+}
+
+.intro .intro-body .intro-text {
+    font-size: 18px;
+}
+
+.content-section {
+    padding-top: 100px;
+}
+
+.recruitment-section {
+    width: 100%;
+    padding: 50px 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+@media(min-width:767px) {
+    .content-section {
+        padding-top: 200px;
+    }
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    font-size: 1.5em;
+    padding: 10px;
+    text-align: center;
+}
+
+
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a,
+#cssmenu #menu-button {
+  border-bottom: 1px solid rgba(255,255,255,.3);
+  line-height: 1;
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#cssmenu:after,
+#cssmenu > ul:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+#cssmenu #menu-button {
+  display: none;
+}
+#cssmenu {
+  font-family: 'Oswald', sans-serif;
+  line-height: 1;
+  box-shadow: 0 3px 0 #3d0099, 0 3px 0 rgba(0, 0, 0, 0.35);
+}
+#cssmenu > ul > li {
+  float: left;
+}
+#cssmenu.align-center > ul {
+  font-size: 0;
+  text-align: center;
+}
+#cssmenu.align-center > ul > li {
+  display: inline-block;
+  float: none;
+}
+#cssmenu.align-right > ul > li {
+  float: right;
+}
+#cssmenu > ul > li > a {
+  padding: 15px 25px;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #3d0099;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+}
+#cssmenu > ul > li > a:hover,
+#cssmenu > ul > li:hover > a,
+#cssmenu > ul > li.active > a {
+  color: #7575a3;
+}
+
+#cssmenu.small-screen > ul,
+#cssmenu.small-screen.align-center > ul {
+  width: 100%;
+  text-align: left;
+}
+#cssmenu.small-screen > ul > li,
+#cssmenu.small-screen.align-center > ul > li {
+  float: none;
+  display: block;
+}
+#cssmenu.small-screen > ul > li > a {
+  padding: 18px 25px;
+}
+#cssmenu.small-screen > ul > li:after,
+#cssmenu.small-screen > ul > li:before {
+  display: none;
+}
+#cssmenu.small-screen #menu-button {
+  display: block;
+  padding: 18px 25px;
+  cursor: pointer;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #3d0099;
+}
+#cssmenu.small-screen #menu-button.menu-opened {
+  color: #3d0099;
+}
+#cssmenu.small-screen #menu-button:after {
+  content: "";
+  position: absolute;
+  right: 25px;
+  top: 19.5px;
+  display: block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  border-top: 2px solid #3d0099;
+  border-bottom: 2px solid #3d0099;
+  width: 18px;
+  height: 3px;
+}
+#cssmenu.small-screen #menu-button.menu-opened:after {
+  border-top: 2px solid #3d0099;
+  border-bottom: 2px solid #3d0099;
+}
+#cssmenu.small-screen #menu-button:before {
+  content: "";
+  position: absolute;
+  right: 25px;
+  top: 29.5px;
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: #3d0099;
+}
+#cssmenu.small-screen #menu-button.menu-opened:before {
+  background: #3d0099;
+}
+#cssmenu.small-screen #menu-indicator {
+  display: none;
+}
+
+#modal .contents
+{
+   /* style the modal's contents, in this case we're just adding padding */
+   padding:24px;
+}
+#blind
+{
+   /* position element so the z-index can be set */
+   position:absolute;
+   /* set z-index so the blind will cover all page content */
+   z-index:9999;
+   /* set the top, left, width and height so the blind covers the browser window */
+   top:0;
+   left:0;
+   width:100%;
+   height:100%;
+   /* set the background to a suitably dark tone */
+   background-color:#000000;
+}
+#modal .window {
+   /* position the element so that the z-index can be applied */
+   position:absolute;
+   /* Set the z-index to a number higher than the blind's z-index */
+   z-index:10000;
+   /* set the width and height of the window */
+   width:400px;
+   height:248px;
+   /* give the window negative margins that match the width/2 and height/2 so it is centered */
+   margin-left:-200px;
+   margin-top:-124px;
+   /* position the top left corner off stage so it can't be seen (instead of display:none;) */
+   left:-1000px;
+   top:-1000px;
+   /* color the background so it shows up */
+   background-color:#ffffff;
+   /* throw on a CSS3 box shadow, because it's cool, and we can */
+   box-shadow:4px 4px 80px #000;
+   -webkit-box-shadow:4px 4px 80px #000;
+   -moz-box-shadow:4px 4px 80px #000;
+}

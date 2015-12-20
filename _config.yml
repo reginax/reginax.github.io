@@ -1,6 +1,9 @@
 baseurl: ""
-url: "http://reginax.github.io" # the base hostname & protocol for your site
-title: "Regina Xu"
+url: http://ucbphirho.org # the base hostname & protocol for your site
+description: UCB Phi Sigma Rho Website
+color:
+  primary-dark: '#ffffff'
+  links: '#3E235B'
 exclude:
   - "README.md"
   - "CHANGELOG.md"
