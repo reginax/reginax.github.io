@@ -8,13 +8,75 @@ body {
     height: 100%;
     font-family: "Merriweather", "Helvetica Neue", Arial, sans-serif;
 }
-
-body, div, ul, ol, li, h1, h2, h3, h4, h5, h6, input, button, textarea, p, blockquote, th, td, a {
-    margin: 0;
-    padding: 4px;
-    transform-origin: left top 0;
+header li a{
+    text-decoration: none;
+    color: #2a2a2a;
 }
 
+header {
+    width: 100%;
+    height: 50px;
+    margin: auto;
+}
+#brand {
+    float: left;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 15px;
+}
+#brand a{
+    text-decoration: none;
+}
+
+.menu ul li {
+    list-style: none;
+    color: #2a2a2a;
+}
+.menu a {
+    text-decoration: none;
+    display: block;
+    padding: 15px 0;
+    border-bottom: 1px solid #bdbdbd;
+}
+.menu li:last-child a{
+    border-bottom: none;
+}
+.menu a:hover {
+    color:#bdbdbd;
+}
+.menu {
+    width: 110px;
+    height: 100%;
+    position: absolute;
+    left: -110px;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+.menu-icon {
+    padding: 10px 20px;
+    color: #2a2a2a; 
+    cursor: pointer;
+    float: right;  
+}
+#menu-toggle { display: none; }
+#menu-toggle:checked ~ .menu {
+    position: absolute;
+    left: 0;
+}
+
+.about {
+    padding-left: 150px;
+}
+.project {
+    padding-left: 150px;
+}
+.work {
+    padding-left: 150px;
+}
 p {
     margin: 0 0 25px;
     font-size: 14px;
@@ -39,7 +101,7 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: #11505d;
+    color: #bdbdbd;
 }
 
 .light {
@@ -74,8 +136,9 @@ a:focus {
 }
 
 .content-section {
-    padding-top: 100px;
+    padding: 10px;
 }
+
 
 .recruitment-section {
     width: 100%;
@@ -92,138 +155,20 @@ a:focus {
     }
 }
 
+
 footer {
     position: absolute;
     width: 100%;
     height: auto;
-    font-size: 1.5em;
+    font-size: 20px; 
     padding: 10px;
-    text-align: center;
+    padding-bottom: 30px;
+    text-align:center;
 }
-
-
-@import url(http://fonts.googleapis.com/css?family=Oswald);
-#cssmenu,
-#cssmenu ul,
-#cssmenu ul li,
-#cssmenu ul li a,
-#cssmenu #menu-button {
-  border-bottom: 1px solid rgba(255,255,255,.3);
-  line-height: 1;
-  display: block;
-  position: relative;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+footer a {
+    color: #2a2a2a;
+    text-decoration: none;
 }
-#cssmenu:after,
-#cssmenu > ul:after {
-  content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  line-height: 0;
-  height: 0;
-}
-#cssmenu #menu-button {
-  display: none;
-}
-#cssmenu {
-  font-family: 'Oswald', sans-serif;
-  line-height: 1;
-  box-shadow: 0 3px 0 #3d0099, 0 3px 0 rgba(0, 0, 0, 0.35);
-}
-#cssmenu > ul > li {
-  float: left;
-}
-#cssmenu.align-center > ul {
-  text-align: center;
-}
-#cssmenu.align-center > ul > li {
-  display: inline-block;
-  float: none;
-}
-#cssmenu.align-right > ul > li {
-  float: right;
-}
-#cssmenu > ul > li > a {
-  padding: 15px 25px;
-  font-size: 14px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #3d0099;
-  -webkit-transition: all .2s ease;
-  -moz-transition: all .2s ease;
-  -ms-transition: all .2s ease;
-  -o-transition: all .2s ease;
-  transition: all .2s ease;
-}
-#cssmenu > ul > li > a:hover,
-#cssmenu > ul > li:hover > a,
-#cssmenu > ul > li.active > a {
-  color: #7575a3;
-}
-
-#cssmenu.small-screen > ul,
-#cssmenu.small-screen.align-center > ul {
-  width: 100%;
-  text-align: left;
-}
-#cssmenu.small-screen > ul > li,
-#cssmenu.small-screen.align-center > ul > li {
-  float: none;
-  display: block;
-}
-#cssmenu.small-screen > ul > li > a {
-  padding: 18px 25px;
-}
-#cssmenu.small-screen > ul > li:after,
-#cssmenu.small-screen > ul > li:before {
-  display: none;
-}
-#cssmenu.small-screen #menu-button {
-  display: block;
-  padding: 18px 25px;
-  cursor: pointer;
-  font-size: 14px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #3d0099;
-}
-#cssmenu.small-screen #menu-button.menu-opened {
-  color: #3d0099;
-}
-#cssmenu.small-screen #menu-button:after {
-  content: "";
-  position: absolute;
-  right: 25px;
-  top: 19.5px;
-  display: block;
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  border-top: 2px solid #3d0099;
-  border-bottom: 2px solid #3d0099;
-  width: 18px;
-  height: 3px;
-}
-#cssmenu.small-screen #menu-button.menu-opened:after {
-  border-top: 2px solid #3d0099;
-  border-bottom: 2px solid #3d0099;
-}
-#cssmenu.small-screen #menu-button:before {
-  content: "";
-  position: absolute;
-  right: 25px;
-  top: 29.5px;
-  display: block;
-  width: 18px;
-  height: 2px;
-  background: #3d0099;
-}
-#cssmenu.small-screen #menu-button.menu-opened:before {
-  background: #3d0099;
-}
-#cssmenu.small-screen #menu-indicator {
-  display: none;
+footer a:hover {
+    color:#bdbdbd;
 }
