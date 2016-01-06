@@ -1,32 +1,30 @@
+<!DOCTYPE html>
+<html>
 <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="stylesheets/main.css">
 </head>
-
 <body>
+
+<header>
 <input type="checkbox" id="menu-toggle"/>
 <label for="menu-toggle" class="menu-icon">&#9776;</label>
-    
-<header>
     <div id="brand"><a href="{{ "/" | prepend:site.baseurl }}">Regina Xu</a>
     </div>
+    <div class="menu">
+        <ul>
+            <li><a href="{{ "/resume" | prepend:site.baseurl }}">RESUME</a>
+            </li>
+            <li>
+            <a href="{{ "/interests" | prepend:site.baseurl }}">INTERESTS</a></li>
+
+            <li>
+            <a href="{{ "/cs61a" | prepend:site.baseurl }}">RESOURCES</a>
+            </li>
+
+        </ul>
+    </div>
 </header>
-
-<div class="menu">
-    <ul>
-        <li><b>ABOUT</b><br>
-        <a href="{{ "/projects" | prepend:site.baseurl }}">Projects</a>
-        <a href="{{ "/resume" | prepend:site.baseurl }}">Resume</a>
-        <a href="{{ "/interests" | prepend:site.baseurl }}">Interests</a></li>
-        <li><b>RESOURCES</b><br>
-        <a href="{{ "/cs61a" | prepend:site.baseurl }}">CS 61A</a></li>
-        <div class="icons">
-            <a href="https://github.com/reginax" target="_blank"><i class="fa fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/reginaxu" target="_blank"><i class="fa fa-linkedin-square"></i></a>
-        </div>
-    </ul>
-</div>
-
 </body>
