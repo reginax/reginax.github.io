@@ -7,8 +7,24 @@ layout: default
 <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
 <div class="interests">
 <script src="../javascripts/masonry.pkgd.min.js"></script> -->
+<script type="text/javascript">
+var words = ['ARTICLES', 'NOVELS', 'ARTISTS', 'NARRATIVES', 'SHORT STORES', 'MUSIC', 'PARAPHERNALIA', 'NEWSPAPERS', 'TV SERIES', 'FILMS', 'MEMORIES', 'OUTINGS', 'JOKES', 'COMICS', 'MANGA', 'FOODS', 'RESTAURANTS', 'LOCATIONS', 'LIBRARIES', 'ITEMS', 'QUOTES', 'MOVIES', 'COMPOSITIONS', 'POEMS'];
+function typedWord()
+{
+     document.getElementById('typed').innerHTML = "";
+     var wordArr = words[Math.floor(Math.random() * words.length)].split("");
+     for (var i=0; i<wordArr.length; i++)
+     {
+         document.getElementById('typed').innerHTML += wordArr[i];
+     }
+}
+setInterval("typedWord()", 2000);
+
+</script>
 <div id="container" class="clearfix section__grey padding-large vertical-offset">
-    <h4>SOME OF MY RECENT FAVORITE <div class="slide-down"></div><span id="typed-cursor">|</span></h4>
+    <h4> 
+<p>SOME OF MY RECENT FAVORITE | <span id="typed"></span> </p>
+    </h4>
     <div class="row">
         <div class="item">
             <a href="http://techcrunch.com/2016/01/03/from-digital-disappointment-tothe-end-of-the-app-era-here-are-eight-trends-for-2016/"> <div class="image" style="background-image: url('../images/article.png')"></div></a>            <div class="description white-panel">

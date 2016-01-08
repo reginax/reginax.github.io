@@ -7,7 +7,8 @@ html, body {
 p, h1, h2, h3, h4 {
     font-family: "Merriwhether";
     margin: 0 0 25px;
-    font-size: 14px;
+    font-size: 15px;
+    color: #29293d;
     line-height: 1.5;
 }
 a {
@@ -21,7 +22,7 @@ a {
     padding-right: 18.62%;
     margin: auto;
 }
-/* Navbar */
+/* NAVBAR */
 header {
     padding: 68.25px;
     width: 100%;
@@ -40,7 +41,7 @@ header {
 }
 #brand a:hover{ color: #bdbdbd; }
 
-/* Pop-up Menu */
+/* SLIDING MENU */
 .menu ul li {
     font-weight: bolder;
     font-size: 0.8rem;
@@ -78,14 +79,14 @@ header {
     position: absolute;
     left: 0;
 }
-/* Social Media Icons */
-.icons {
-    display:block;
+/* SOCIAL MEDIA ICONS */
+#icons {
+    display: block;
 }
-.icons a {
-    padding-left: 18.5%;
+#icons a {
     text-decoration: none;
-    display: table;
+    float: left;
+    padding-right: 18.25px;
 }
 
 /* Home page */
@@ -99,12 +100,18 @@ header {
 .intro a {
     text-decoration: none;
 }
-/*#intro-pic div {
+.intro p {
+    font-size: 0.97rem;
+}
+#intro-pic {
+    width: 64%;
+}
+#intro-pic div {
     background: rgba(0, 0, 0, 0) url("../images/profile.jpg") no-repeat scroll 20px 0px / cover ;
-    display: block;
+    width: 150px;
     height: 200px;
-    width: 200px;
-}*/
+    float: right;
+}
 /* Projects section */
 ul.img-list li:hover span.text-content {
     opacity: 1;
@@ -200,12 +207,6 @@ span.text-content span {
     padding: 1rem;
     position: relative;
 }
-.description {
-    box-sizing: content-box;
-    min-height: 11.25rem;
-    padding: 1rem;
-    position: relative;
-}
 .button-group {
     margin-left: -0.25rem;
     margin-right: -0.25rem;
@@ -243,12 +244,21 @@ span.text-content span {
     bottom: 1rem;
     position: absolute;
 }
-#typed-cursor {
-    animation: 0.7s ease 0s normal none infinite running blink;
-    font-weight: 100;
-    opacity: 1;
+#typed {
+    display:inline;    
+    width: 30em;
+    white-space:owrap;
+    overflow:hidden;
+    -webkit-animation: type 5s steps(50, end);
+    animation: type 5s steps(50, end);
+}
+@keyframes type{
+    from { width: 0; }
 }
 
+@-webkit-keyframes type{
+    from { width: 0; }
+}
 /* CS 61A section */
 
 .cs61a ul li {

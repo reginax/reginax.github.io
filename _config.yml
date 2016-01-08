@@ -2,7 +2,7 @@ baseurl: ""
 description: Personal website
 color:
   primary-dark: '#ffffff'
-  links: '#2a2a2a'
+  links: '#2C3E50'
 exclude:
   - "README.md"
   - "CHANGELOG.md"
