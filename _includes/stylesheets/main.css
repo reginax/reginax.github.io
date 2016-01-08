@@ -103,14 +103,18 @@ header {
 .intro p {
     font-size: 0.97rem;
 }
-#intro-pic {
-    width: 64%;
+.intro-pic {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    margin: auto;
+    padding: auto;
 }
-#intro-pic div {
+.intro-pic div {
     background: rgba(0, 0, 0, 0) url("../images/profile.jpg") no-repeat scroll 20px 0px / cover ;
     width: 150px;
     height: 200px;
-    float: right;
 }
 /* Projects section */
 ul.img-list li:hover span.text-content {
