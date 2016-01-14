@@ -87,18 +87,18 @@ a {
     -o-background-size: cover;
 }
 .intro a {
-    text-decoration: none;
+  text-decoration: none;
 }
 .intro p {
-    font-size: 0.97rem;
+  font-size: 0.97rem;
 }
 .intro-pic {
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    margin: auto;
-    padding: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  margin: auto;
+  padding: auto;
 }
 .intro-pic div {
     background: rgba(0, 0, 0, 0) url("../images/profile.jpg") no-repeat scroll 20px 0px / cover ;
@@ -106,6 +106,28 @@ a {
     height: 200px;
 }
 /* Projects section */
+.button-link {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  padding: 10px 15px;
+  background: #bdbdbd;
+  color: #FFF;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+.button-link:active {
+  -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+  background: #696969;
+}
+
+.button-link:hover, .button-link:focus {
+  background: #696969;
+  text-decoration: none;
+}
 ul.img-list li:hover span.text-content {
     opacity: 1;
 }
@@ -144,7 +166,6 @@ span.text-content span {
   text-align: center;
   vertical-align: middle;
 }
-
 /* Resume tab */
 /*.course-title {
     text-decoration: none;
@@ -170,8 +191,13 @@ span.text-content span {
     padding: 4rem 0;
 }
 .item {
-    width: 15em;
-    height: 25em;
+    transition: box-shadow 0.25s ease 0s;
+    border-radius: 2px;
+    width:100%;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    width: 15rem;
+    height: 28rem;
     margin: 1.5%;
     border: 2px solid #d1d1e0;    
     display: inline-block;
@@ -188,6 +214,7 @@ span.text-content span {
     background-size: cover;
     padding-top: 75%;
     width: 100%;
+    height:35px;
 }
 .only-description {
     background-position: center center;
@@ -275,4 +302,80 @@ span.text-content span {
     font-weight: 300;
     line-height: 1.5rem;
     margin-top: 2%;
+}
+
+
+
+/*--------------*/
+.project {
+    background-color: #8FACC0;
+    height: 250px;
+    overflow: hidden;
+    padding: 0px;
+    position: relative;
+    transition: all 250ms ease 0s;
+}
+.homepage-box {
+    margin-bottom: 20px;
+    padding: 30px;
+    position: relative;
+}
+.project .project-type {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+.project .project-title {
+    bottom: 0px;
+    padding: 0px 50px;
+    position: absolute;
+    transition: all 250ms ease 0s;
+    z-index: 1;
+}
+.title-container {
+    color: #F3F3F3;
+}
+.project .project-name {
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.project .button {
+    right: 50px;
+    opacity: 0;
+    position: absolute;
+    top: 8px;
+    transition: all 150ms ease 0s;
+    visibility: hidden;
+}
+a.button {
+    background-color: rgba(33, 133, 213, 0.8);
+    border-radius: 2px;
+    color: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    font-size: 13px;
+    padding: 10px;
+    text-decoration: none;
+    transition: all 100ms ease 0s;
+}
+.project .project-description {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 15px;
+    line-height: 1.3;
+    opacity: 0;
+    transition: all 250ms ease 0s;
+    visibility: hidden;
+}
+.hover-overlay {
+    background-color: #3A4750;
+    height: 160px;
+    left: 0px;
+    position: absolute;
+    top: 100%;
+    transition: all 300ms ease 0s;
+    width: 100%;
+}
+.project-image {
+    height: 100%;
+    transition: all 300ms ease 0s;
 }
