@@ -1,35 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Regina Xu</title>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">    
     <link rel="stylesheet" href="stylesheets/main.css">
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>    
+    <script>        
+        $(function() {
+            var pull        = $('#pull');
+                menu        = $('nav ul');
+                menuHeight  = menu.height();
+         
+            $(pull).on('click', function(e) {
+                e.preventDefault();
+                menu.slideToggle();
+            });
+            $(window).resize(function(){
+                var w = $(window).width();
+                if(w > 320 && menu.is(':hidden')) {
+                    menu.removeAttr('style');
+                }
+            });
+        }); 
+    </script>
 </head>
 <body>
-
-<div id="container" class="clearfix section__grey padding-large vertical-offset">
-<input type="checkbox" id="menu-toggle"/>
-<label for="menu-toggle" class="menu-icon">&#9776;</label>
-    <div id="brand"><a href="{{ "/" | prepend:site.baseurl }}">Regina Xu</a>
+    <div id="header-wrapper">
+        <div id="header" class="content">
+            <div id="brand" class="content"><a href="{{ "/" | prepend:site.baseurl }}"><center>Regina Xu</center></a>
+            </div>
+            <nav class="clearfix">
+                <ul class="clearfix">
+                    <li><a href="{{ "/" | prepend:site.baseurl }}">PROJECTS</a>
+                    </li>
+                    <li>
+                    <li><a href="{{ "/about" | prepend:site.baseurl }}">ABOUT</a>
+                    </li>
+                    <li>
+                    <a href="{{ "/cs61a" | prepend:site.baseurl }}">RESOURCES</a>
+                    </li>
+                    <li>
+                    <a href="{{ "/interests" | prepend:site.baseurl }}">INTERESTS</a></li>
+                    <br>
+                    <li>
+                        <a target="_blank" href="mailto:regina.xu1@gmail.com"><i class="fa fa-envelope"></i></a>
+                        <a href="https://github.com/reginax" target="_blank"><i class="fa fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/reginaxu" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+                    </li>
+                </ul>
+                <a href="/" id="pull"><i class="fa fa-bars fa-2x" style="float: center; padding-top: 3px;">
+                </i></a>
+            </nav>
+        </div>
     </div>
-    <div class="menu">
-        <ul>
-            <li><a href="{{ "/resume" | prepend:site.baseurl }}">RESUME</a>
-            </li>
-            <li>
-            <a href="{{ "/cs61a" | prepend:site.baseurl }}">RESOURCES</a>
-            </li>
-            <li>
-            <a href="{{ "/interests" | prepend:site.baseurl }}">THINGS</a></li>
-            <li>
-                <div id="icons">
-                    <a target="_blank" href="mailto:regina.xu1@gmail.com"><i class="fa fa-envelope"></i></a>
-                    <a href="https://github.com/reginax" target="_blank"><i class="fa fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/reginaxu" target="_blank"><i class="fa fa-linkedin-square"></i></a>
-                </div>
-            </li>
-        </ul>
-    </div>
-</div>
 </body>
+</html>
