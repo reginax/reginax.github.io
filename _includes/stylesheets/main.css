@@ -70,7 +70,7 @@ a {
 #brand a { 
   display: block;
   text-decoration: none; 
-  line-height: 50px;
+  line-height: 1.5;
   font-size: 1.8rem;
   font-weight: bolder;
 }
@@ -93,6 +93,14 @@ nav ul li:hover:after {
   border: 1px solid #2a2a2a;
   border-radius: 4px;
 }
+nav a i:hover, nav a i:active { 
+  -webkit-transform:scale(1.4); /* Safari and Chrome */
+  -moz-transform:scale(1.4); /* Firefox */
+  -ms-transform:scale(1.4); /* IE 9 */
+  -o-transform:scale(1.4); /* Opera */
+   transform:scale(1.4);
+}
+
 nav a:hover, nav a:active { color:#bdbdbd; }
 nav li {
   display: inline-block;
@@ -391,34 +399,6 @@ nav ul {
 .post-text {
     font-size: 0.9rem;
     font-weight: 300;
-    line-height: 1.5rem;
+    line-height: 1.5;
     margin-top: 2%;
 }
-
-
-
-/*.navbar-toggle {
-  border: none;
-  background: transparent !important;
-
-  &:hover {
-    background: transparent !important;
-  }
-
-  .icon-bar {
-    width: 22px;
-    transition: all 0.2s;
-  }
-  .top-bar {
-    transform: rotate(45deg);
-    transform-origin: 10% 10%;
-  }
-  .middle-bar {
-    opacity: 0;
-  }
-  .bottom-bar {
-    transform: rotate(-45deg);
-    transform-origin: 10% 90%;
-  }
-}
-*/
