@@ -42,6 +42,12 @@ a {
   padding-right: 18.62%;
   margin: auto;
 }
+#container .btn1{
+  text-decoration: none;
+}
+#container .btn1:hover{
+  color: #cccccc;
+}
 #content-wrapper1 {
   padding-left: 18.62%;
   padding-right: 18.62%;
