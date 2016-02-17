@@ -42,6 +42,9 @@ a {
   padding-right: 18.62%;
   margin: auto;
 }
+#container .thumb:hover {
+  color: #cccccc;
+}
 #container .btn1{
   text-decoration: none;
 }
@@ -306,7 +309,7 @@ nav ul {
     box-sizing:border-box;
     -moz-box-sizing:border-box;
     border-radius: 2px;
-    width: 18.25rem;
+    width: 16.25rem;
     height: auto;
     margin: 1.5%;
     border: 2px solid #d1d1e0;    
