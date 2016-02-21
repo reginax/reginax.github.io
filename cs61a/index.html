@@ -4,12 +4,14 @@ permalink: "cs61a/index.html"
 layout: default
 ---
 
-<div id="container" class="clearfix section__grey padding-large vertical-offset"> 
- <h4>{{ page.title }}</h4>
-  <p>Some of the notes and review sheets I've gathered over the year as a mentor with <a target="_blank" href="http://csmberkeley.github.io/">Computer Science Mentors</a>.</p>
-  <ul>
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+<div id="container" class="fadeIn">
+  <div class="col-xs-12 col-sm-4">
+	<h4>{{ page.title }}</h4>
+	<p>Some of the notes and review sheets I've gathered over the year as a mentor with <a target="_blank" href="http://csmberkeley.github.io/">Computer Science Mentors</a>.</p>
+	<ul>
+    	{% for post in site.posts %}
+	      <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+	    {% endfor %}
+  	</ul>
+  </div>
 </div>
