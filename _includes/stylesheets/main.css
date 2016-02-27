@@ -6,7 +6,7 @@ html, p, h1, h2, h3, h4 {
   font-style: normal;
   vertical-align: baseline;
   font-size: 15px;
-  color: #2a2a2a;
+  color: #333333;
   line-height: 1.5;
 }
 body {
@@ -44,13 +44,13 @@ a {
   background: #ffffff;
 }
 #container .thumb:hover {
-  color: #cccccc;
+  color: #bdbdbd;
 }
 #container .btn1{
   text-decoration: none;
 }
 #container .btn1:hover{
-  color: #cccccc;
+  color: #bdbdbd;
 }
 #object {
   background-color: inherit;
@@ -83,15 +83,15 @@ a {
   padding: 3em 0em;
 }
 nav ul li:hover:after {
-  border: 1px solid #2a2a2a;
+  border: 1px solid #bdbdbd;
   border-radius: 4px;
 }
 nav a i:hover, nav a i:active { 
-  -webkit-transform:scale(1.4); /* Safari and Chrome */
-  -moz-transform:scale(1.4); /* Firefox */
-  -ms-transform:scale(1.4); /* IE 9 */
-  -o-transform:scale(1.4); /* Opera */
-   transform:scale(1.4);
+  -webkit-transform:scale(1.45); /* Safari and Chrome */
+  -moz-transform:scale(1.45); /* Firefox */
+  -ms-transform:scale(1.45); /* IE 9 */
+  -o-transform:scale(1.45); /* Opera */
+   transform:scale(1.45);
 }
 
 nav a:hover, nav a:active { color:#bdbdbd; }
@@ -201,7 +201,6 @@ nav ul {
     text-transform: uppercase;
     font-weight: 600;
     font-size: 1.1em;
-    color: #6F6F6F;
 }
 .box1 {
   float: left;
@@ -269,25 +268,25 @@ nav ul {
   -ms-transition: all 1s ease; /* IE 9 */
   -o-transition: all 1s ease; /* Opera */
   transition: all 1s ease;
-  -webkit-transform:scale(1.18); /* Safari and Chrome */
-  -moz-transform:scale(1.18); /* Firefox */
-  -ms-transform:scale(1.18); /* IE 9 */
-  -o-transform:scale(1.18); /* Opera */
-   transform:scale(1.18);
+  -webkit-transform:scale(1.25); /* Safari and Chrome */
+  -moz-transform:scale(1.25); /* Firefox */
+  -ms-transform:scale(1.25); /* IE 9 */
+  -o-transform:scale(1.25); /* Opera */
+   transform:scale(1.25);
 }
 .wrapper:hover img {
-  -webkit-transform:scale(1.4); /* Safari and Chrome */
-  -moz-transform:scale(1.4); /* Firefox */
-  -ms-transform:scale(1.4); /* IE 9 */
-  -o-transform:scale(1.4); /* Opera */
-   transform:scale(1.4);
+  -webkit-transform:scale(1.45); /* Safari and Chrome */
+  -moz-transform:scale(1.45); /* Firefox */
+  -ms-transform:scale(1.45); /* IE 9 */
+  -o-transform:scale(1.45); /* Opera */
+   transform:scale(1.45);
 }
 .thumb img {
-  -webkit-transform:scale(1.18); /* Safari and Chrome */
-  -moz-transform:scale(1.18); /* Firefox */
-  -ms-transform:scale(1.18); /* IE 9 */
-  -o-transform:scale(1.18); /* Opera */
-   transform:scale(1.18);
+  -webkit-transform:scale(1.25); /* Safari and Chrome */
+  -moz-transform:scale(1.25); /* Firefox */
+  -ms-transform:scale(1.25); /* IE 9 */
+  -o-transform:scale(1.25); /* Opera */
+   transform:scale(1.25);
   height: 200px;
   width: 300px;
   overflow: hidden;

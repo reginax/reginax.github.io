@@ -1,9 +1,9 @@
-title: REGINA&#24464; 
+title: Regina Xu #&#24464; 
 
 description: Personal website experimentation
 color:
   primary-dark: '#ffffff'
-  links: '#2C3E50'
+  links: '#404040'
 exclude:
   - "README.md"
   - "CHANGELOG.md"
