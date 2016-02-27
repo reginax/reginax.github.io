@@ -205,7 +205,6 @@ nav ul {
 .box1 {
   float: left;
   padding: 0 30px 40px 0;
-  border-right: 1px solid rgba(0,0,0,.1);
   width: 450px;
 }
 .box2 {
@@ -229,12 +228,10 @@ nav ul {
 }
 @media only screen and (max-width : 964.9px) {
   .box2 {
-    border-top: 1px solid rgba(0,0,0,.1);
     float: left;
     padding: 30px 30px 40px 0;
   }
   .box1 {
-    border-right: none;
     margin-right: 500px;
   }
 }
@@ -445,55 +442,3 @@ nav ul {
     line-height: 1.5;
     margin-top: 2%;
 }
-.fadeIn {
-  animation-duration: 1.5s; 
-  -webkit-animation-duration: 1.5s;
-  -moz-animation-duration: 1s;
-  -ms-animation-duration: 1s;
-  -o-animation-duration: 1s;
-
-  animation-timing-function: ease-in-out; 
-  -webkit-animation-timing-function: ease-in-out;   
-  -moz-animation-timing-function: ease-in-out;
-  -ms-animation-timing-function: ease-in-out;
-  -o-animation-timing-function: ease-in-out;  
-
-  visibility: visible !important; 
-}
-
-@keyframes fadeIn {
-  0% {
-    transform: scale(0);
-    opacity: 0.0;   
-  }
-  60% {
-    transform: scale(1.1);  
-  }
-  80% {
-    transform: scale(0.9);
-    opacity: 1; 
-  } 
-  100% {
-    transform: scale(1);
-    opacity: 1; 
-  }   
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    -webkit-transform: scale(0);
-    opacity: 0.0;   
-  }
-  60% {
-    -webkit-transform: scale(1.1);
-  }
-  80% {
-    -webkit-transform: scale(0.9);
-    opacity: 1; 
-  } 
-  100% {
-    -webkit-transform: scale(1);
-    opacity: 1; 
-  }   
-}
-
