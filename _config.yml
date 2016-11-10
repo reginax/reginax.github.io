@@ -7,7 +7,6 @@ color:
 exclude:
   - "README.md"
   - "CHANGELOG.md"
-  - "CNAME"
   - "Gemfile"
   - "Gemfile.lock"
 defaults:
