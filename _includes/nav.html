@@ -4,15 +4,15 @@
     <title>Regina Xu</title>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="stylesheets/main.css">
-    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>    
-    <script>        
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script>
         $(function() {
             var pull        = $('#pull');
                 menu        = $('nav ul');
                 menuHeight  = menu.height();
-         
+
             $(pull).on('click', function(e) {
                 e.preventDefault();
                 menu.slideToggle();
@@ -23,7 +23,7 @@
                     menu.removeAttr('style');
                 }
             });
-        }); 
+        });
     </script>
 </head>
 <body>
@@ -37,9 +37,6 @@
                     </li>
                     <li>
                     <li><a href="{{ "/about" | prepend:site.baseurl }}">about</a>
-                    </li>
-                    <li>
-                    <a href="{{ "/cs61a" | prepend:site.baseurl }}">resources</a>
                     </li>
                     <li>
                     <a href="{{ "/interests" | prepend:site.baseurl }}">interests</a></li>
